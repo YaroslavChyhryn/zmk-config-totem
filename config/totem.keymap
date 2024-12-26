@@ -72,10 +72,10 @@
 
         NAV {
             bindings = <
-       &none         &none         &none             &none           &none          &kp LC(LS(TAB))       &kp K_SCROLL_DOWN  &kp K_SCROLL_UP  &kp LC(TAB)            &kp HOME
-       &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none          &kp LEFT_ARROW        &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW        &none
-&none  &kp K_REDO    &kp K_UNDO    &kp K_CUT         &kp K_COPY      &kp K_PASTE    &kp LG(LEFT_BRACKET)  &kp PAGE_DOWN      &kp PAGE_UP      &kp LG(RIGHT_BRACKET)  &kp END   &kp INSERT
-                                   &none             &none           &none          &none                 &none              &none
+       &none         &none         &none             &none           &none          &kp PAGE_UP    &kp LS(LC(TAB))       &kp UP_ARROW  &kp LC(TAB)            &kp HOME
+       &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none          &kp PAGE_DOWN  &kp LEFT_ARROW        &kp DOWN      &kp RIGHT_ARROW        &kp END
+&none  &kp K_REDO    &kp K_UNDO    &kp K_CUT         &kp K_COPY      &kp K_PASTE    &none          &kp LG(LEFT_BRACKET)  &none         &kp LG(RIGHT_BRACKET)  &none     &kp INSERT
+                                   &none             &none           &none          &none          &none                 &none
             >;
 
             label = "nav";
