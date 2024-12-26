@@ -53,71 +53,72 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp Q           &kp W           &kp F               &kp P             &kp B        &kp J        &kp L            &kp U                &kp Y            &kp APOSTROPHE
-        &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt T LEFT_SHIFT  &kp G        &kp M        &mt RSHIFT N     &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt RIGHT_GUI O
-&trans  &lt 7 Z         &kp X           &kp C               &kp D             &kp V        &kp K        &kp H            &kp COMMA            &kp DOT          &kp SLASH        &kp SEMICOLON
-                                        &lt 5 ESCAPE        &lt 2 SPACE       &lt 3 TAB    &lt 6 ENTER  &lt 4 BACKSPACE  &kp DELETE
+       &kp Q           &kp W           &kp F               &kp P             &kp B        &kp J        &kp L            &kp U                &kp Y            &kp APOSTROPHE
+       &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt T LEFT_SHIFT  &kp G        &kp M        &mt RSHIFT N     &mt RIGHT_CONTROL E  &mt RIGHT_ALT I  &mt RIGHT_GUI O
+&none  &lt 7 Z         &kp X           &kp C               &kp D             &kp V        &kp K        &kp H            &kp COMMA            &kp DOT          &kp SLASH        &kp SEMICOLON
+                                       &lt 5 ESCAPE        &lt 2 SPACE       &lt 4 TAB    &lt 6 ENTER  &lt 3 BACKSPACE  &kp DELETE
             >;
         };
 
         BASE_UA {
             label = "base_ua";
             bindings = <
-        &kp Q    &kp W  &kp E         &kp R        &kp T        &kp Y        &kp U            &kp I       &kp O    &kp P
-        &kp A    &kp S  &kp D         &kp F        &kp G        &kp H        &kp J            &kp K       &kp L    &kp SEMI
-&trans  &lt 7 Z  &kp X  &kp C         &kp V        &kp B        &kp N        &kp M            &kp COMMA   &kp DOT  &kp FSLH  &kp SINGLE_QUOTE
-                        &lt 5 ESCAPE  &lt 2 SPACE  &lt 3 TAB    &lt 6 ENTER  &lt 4 BACKSPACE  &kp DELETE
+                  &kp Q    &kp W  &kp E         &kp R        &kp T        &kp Y        &kp U            &kp I       &kp O    &kp P
+                  &kp A    &kp S  &kp D         &kp F        &kp G        &kp H        &kp J            &kp K       &kp L    &kp SEMI
+&kp LEFT_BRACKET  &lt 7 Z  &kp X  &kp C         &kp V        &kp B        &kp N        &kp M            &kp COMMA   &kp DOT  &kp FSLH  &kp SINGLE_QUOTE
+                                  &lt 5 ESCAPE  &lt 2 SPACE  &lt 4 TAB    &lt 6 ENTER  &lt 3 BACKSPACE  &kp DELETE
             >;
         };
 
         NAV {
             bindings = <
-        &trans        &trans        &trans            &trans          &trans         &trans          &trans          &trans        &trans           &trans
-        &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &kp K_REDO    &kp K_UNDO    &kp K_CUT         &kp K_COPY      &kp K_PASTE    &trans          &trans          &trans        &trans           &trans  &kp INSERT
-                                    &trans            &trans          &trans         &trans          &trans          &trans
+       &none         &none         &none             &none           &none          &kp LC(LS(TAB))       &kp K_SCROLL_DOWN  &kp K_SCROLL_UP  &kp LC(TAB)            &kp HOME
+       &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none          &kp LEFT_ARROW        &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW        &none
+&none  &kp K_REDO    &kp K_UNDO    &kp K_CUT         &kp K_COPY      &kp K_PASTE    &kp LG(LEFT_BRACKET)  &kp PAGE_DOWN      &kp PAGE_UP      &kp LG(RIGHT_BRACKET)  &kp END   &kp INSERT
+                                   &none             &none           &none          &none                 &none              &none
             >;
 
             label = "nav";
         };
 
+        SYM {
+            bindings = <
+                      &kp SLASH  &kp BACKSLASH  &kp ASTERISK      &kp UNDER  &kp PERCENT      &kp AT_SIGN      &kp COLON      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SINGLE_QUOTE
+                      &kp PIPE   &kp MINUS      &kp PLUS          &kp EQUAL  &kp CARET        &kp HASH         &kp SEMICOLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES
+&kp NON_US_BACKSLASH  &none      &kp LESS_THAN  &kp GREATER_THAN  &kp TILDE  &kp AMPERSAND    &kp EXCLAMATION  &kp GRAVE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none              &kp RIGHT_BRACKET
+                                                &none             &none      &none            &none            &none          &none
+            >;
+
+            label = "sym";
+        };
+
         NUM {
             bindings = <
-        &trans        &trans        &trans            &trans          &trans    &trans  &kp N7  &kp N8  &kp N9  &trans
-        &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans  &kp N4  &kp N5  &kp N6  &trans
-&trans  &trans        &trans        &trans            &trans          &trans    &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
-                                    &trans            &trans          &trans    &trans  &kp N0  &trans
+       &none         &none         &none             &none           &none    &none  &kp N7  &kp N8  &kp N9  &none
+       &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &none    &none  &kp N4  &kp N5  &kp N6  &none
+&none  &none         &none         &none             &none           &none    &none  &kp N1  &kp N2  &kp N3  &none  &none
+                                   &none             &none           &none    &none  &kp N0  &none
             >;
 
             label = "num";
         };
 
-        SYM {
-            label = "sym";
-            bindings = <
-        &trans  &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &trans    &trans  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE    &kp RIGHT_BRACKET  &trans
-        &trans  &trans            &kp EQUAL       &kp UNDERSCORE        &trans    &trans  &kp RIGHT_SHIFT        &kp RIGHT_CONTROL  &kp RIGHT_ALT      &kp RIGHT_GUI
-&trans  &trans  &trans            &trans          &trans                &trans    &trans  &trans                 &trans             &trans             &trans         &trans
-                                  &trans          &trans                &trans    &trans  &trans                 &trans
-            >;
-        };
-
         MEDIA {
             label = "media";
             bindings = <
-        &trans        &trans        &trans        &trans        &trans            &trans  &trans             &trans            &trans           &trans
-        &trans        &trans        &trans        &trans        &trans            &trans  &kp K_PREVIOUS     &kp K_PLAY_PAUSE  &kp K_NEXT       &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL    &trans  &kp K_VOLUME_DOWN  &kp K_MUTE        &kp K_VOLUME_UP  &trans  &trans
-                                    &trans        &trans        &trans            &trans  &trans             &trans
+       &kp LG(LA(U))  &kp LG(LA(D))     &kp LG(LA(F))  &kp LG(LA(G))            &kp LA(LG(I))     &none  &none              &none             &none            &none
+       &kp LG(LA(J))  &kp LG(LA(LEFT))  &kp LG(LC(F))  &kp LG(LA(RIGHT_ARROW))  &kp LA(LG(K))     &none  &kp K_PREVIOUS     &kp K_PLAY_PAUSE  &kp K_NEXT       &none
+&none  &bt BT_SEL 0   &bt BT_SEL 1      &bt BT_SEL 2   &bt BT_SEL 3             &bt BT_CLR_ALL    &none  &kp K_VOLUME_DOWN  &kp K_MUTE        &kp K_VOLUME_UP  &none  &none
+                                        &none          &none                    &none             &none  &none              &none
             >;
         };
 
         FUN {
             bindings = <
-        &kp F12  &kp F7  &kp F8  &kp F9  &trans    &trans  &trans           &trans             &trans         &trans
-        &kp F11  &kp F4  &kp F5  &kp F6  &trans    &trans  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI
-&trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans    &trans  &trans           &trans             &trans         &trans         &trans
-                         &trans  &trans  &trans    &trans  &trans           &trans
+       &kp F12  &kp F7  &kp F8  &kp F9  &none    &none  &none            &none              &none          &none
+       &kp F11  &kp F4  &kp F5  &kp F6  &none    &none  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_GUI
+&none  &kp F10  &kp F1  &kp F2  &kp F3  &none    &none  &none            &none              &none          &none          &none
+                        &none   &none   &none    &none  &none            &none
             >;
 
             label = "fun";
@@ -125,10 +126,10 @@
 
         MOUSE {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+       &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
+                     &none  &none  &none    &none  &none  &none
             >;
 
             label = "mouse";
