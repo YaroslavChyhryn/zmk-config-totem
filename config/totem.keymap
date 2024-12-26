@@ -72,10 +72,10 @@
 
         NAV {
             bindings = <
-        &trans        &trans        &trans            &trans          &trans    &kp K_REDO      &kp K_PASTE     &kp K_COPY    &kp K_CUT        &kp K_UNDO
-        &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp HOME
-&trans  &trans        &trans        &trans            &trans          &trans    &trans          &kp PAGE_DOWN   &kp PAGE_UP   &trans           &kp END     &kp INSERT
-                                    &trans            &trans          &trans    &trans          &trans          &trans
+        &trans        &trans        &trans            &trans          &trans         &trans          &trans          &trans        &trans           &trans
+        &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &kp K_REDO    &kp K_UNDO    &kp K_CUT         &kp K_COPY      &kp K_PASTE    &trans          &trans          &trans        &trans           &trans  &kp INSERT
+                                    &trans            &trans          &trans         &trans          &trans          &trans
             >;
 
             label = "nav";
@@ -105,10 +105,10 @@
         MEDIA {
             label = "media";
             bindings = <
-        &trans        &trans        &trans            &trans          &trans    &trans          &trans          &trans            &trans        &kp C_VOLUME_UP
-        &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans          &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp K_NEXT    &kp C_VOLUME_DOWN
-&trans  &trans        &trans        &trans            &trans          &trans    &bt BT_CLR_ALL  &bt BT_SEL 0    &bt BT_SEL 1      &bt BT_SEL 2  &bt BT_SEL 3       &kp K_MUTE
-                                    &trans            &trans          &trans    &trans          &trans          &trans
+        &trans        &trans        &trans        &trans        &trans            &trans  &trans             &trans            &trans           &trans
+        &trans        &trans        &trans        &trans        &trans            &trans  &kp K_PREVIOUS     &kp K_PLAY_PAUSE  &kp K_NEXT       &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL    &trans  &kp K_VOLUME_DOWN  &kp K_MUTE        &kp K_VOLUME_UP  &trans  &trans
+                                    &trans        &trans        &trans            &trans  &trans             &trans
             >;
         };
 
