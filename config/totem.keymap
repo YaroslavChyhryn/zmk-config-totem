@@ -30,7 +30,21 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        to_qwerty {
+            bindings = <&to 1>;
+            key-positions = <20 31>;
+            layers = <0>;
+        };
+
+        to_colemak_dh {
+            bindings = <&to 0>;
+            key-positions = <20 31>;
+            layers = <1>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
