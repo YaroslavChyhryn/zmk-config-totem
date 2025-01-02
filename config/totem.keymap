@@ -98,10 +98,10 @@
 
         SYM {
             bindings = <
-                      &kp SLASH   &kp BACKSLASH  &kp ASTERISK      &kp UNDER  &kp PERCENT      &kp AT_SIGN      &kp COLON      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SINGLE_QUOTE
-                      &kp PIPE    &kp MINUS      &kp PLUS          &kp EQUAL  &kp CARET        &kp HASH         &kp SEMICOLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES
-&kp NON_US_BACKSLASH  &kp DOLLAR  &kp LESS_THAN  &kp GREATER_THAN  &kp TILDE  &kp AMPERSAND    &kp EXCLAMATION  &kp GRAVE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp QUESTION       &kp RIGHT_BRACKET
-                                                 &trans            &trans     &trans           &trans           &trans         &trans
+                      &kp SLASH        &kp BACKSLASH  &kp ASTERISK      &kp UNDER  &kp PERCENT      &kp AT_SIGN  &kp COLON      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SINGLE_QUOTE
+                      &kp PIPE         &kp MINUS      &kp PLUS          &kp EQUAL  &kp CARET        &kp HASH     &kp SEMICOLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES
+&kp NON_US_BACKSLASH  &kp EXCLAMATION  &kp LESS_THAN  &kp GREATER_THAN  &kp TILDE  &kp AMPERSAND    &kp DOLLAR   &kp GRAVE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp QUESTION       &kp RIGHT_BRACKET
+                                                      &trans            &trans     &trans           &trans       &trans         &trans
             >;
 
             label = "sym";
